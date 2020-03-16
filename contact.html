@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Xpense App</title>
+
+    <link rel="manifest" href="/manifest.json">
+
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+
+    <link rel="stylesheet" href="./css/style.css">
+
+    
+      <!--JavaScript at end of body for optimized loading-->
+      <script type="text/javascript" src="js/materialize.min.js"></script>
+
+</head>
+<body class="grey lighten-4">
+    <nav>
+        <div class="nav-wrapper grey darken-4">
+            
+          <a id='title' href="#" class="brand-logo">
+            <i class="material-icons">account_balance_wallet</i>  
+            Xpense App</a>
+            <i id='burger' class="material-icons sidenav-trigger right" data-target="navr">menu</i>
+
+          <ul id="nav-mobile" class="right hide-on-med-and-down ">
+            <li><a href="main.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li id="exit"><a href="index.html">Log Out</a></li>
+          </ul>
+        </div>
+    </nav>
+
+<ul id="navr" class="sidenav navr">
+        <li><a  class="subheader">Xpense App</a></li>
+        <li><a href="/main.html" class="waves-effect">Home</a></li>
+        <li><a href="about.html" class="waves-effect">About</a></li>
+        <li id="exit"><a href="index.html">Log Out</a></li>
+        <li><div class="divider"></div></li>
+        <li><a href="contact.html" class="waves-effect">
+          <i class="material-icons">mail_outline</i>Contact</a>
+        </li>
+</ul>
+
+
+<h3>Contact us</h3>
+    
+            
+
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-firestore.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-auth.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-analytics.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyCyIizgEUt3sOccsX6L0G_RWU1wEjJ-WOo",
+    authDomain: "xpense-app-d4794.firebaseapp.com",
+    databaseURL: "https://xpense-app-d4794.firebaseio.com",
+    projectId: "xpense-app-d4794",
+    storageBucket: "xpense-app-d4794.appspot.com",
+    messagingSenderId: "445191098969",
+    appId: "1:445191098969:web:3424e1fb5565e0bcf05748",
+    measurementId: "G-ZFP629VHR8"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+
+  //Make auth and firebase refrences ;
+  const auth = firebase.auth() ;
+  const db = firebase.firestore() ; 
+  
+  //time stamp in snapshots
+</script>
+
+<script src="/js/app.js"></script>
+<script src="/js/ui.js"></script>
+<script src="/js/main.js"></script>
+<script src="/js/auth-main.js"></script>
+</body>
+</html>

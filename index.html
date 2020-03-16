@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Xpense App</title>
+
+    <meta name="theme-color" content="#121212"
+
+    <link type="text/javascript" src="/js/auth-login.js"></link>
+
+    <link rel="manifest" href="/manifest.json">
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+
+    <link rel="stylesheet" href="./css/login.css">
+
+    <link rel="apple-touch-icon" href="/images/icons/icon-96x96.png">
+    
+      <!--JavaScript at end of body for optimized loading-->
+      <script type="text/javascript" src="js/materialize.min.js"></script>
+
+</head>
+<body class="grey darken-4 center">
+    <h2 class="header">Xpense App</h2>
+    <div id="main" > 
+        <h3 class="subheader">Login</h3>
+        <form class="login">
+          <div class="input-field">
+            <input type="email" id="email" class="validate">
+            <label class="active" for="email">Email</label>
+          </div>
+          <div class="input-field">
+            <input type="password" id="password" class="validate">
+            <label class="active" for="password">password</label>
+          </div>
+          <button id="submit" class="btn waves-effect waves-light btn-large" style="margin: 10px;">Login</button>
+        <button class="btn waves-effect waves-light btn-large" style="margin: 10px;"><a href="signup.html" style="color: white;">Sign Up</a></button>
+        <span id="err" style="color: red; margin: 1rem ;"></span>
+
+        </div>
+        
+
+    </form >
+
+
+
+    </div>
+
+    <script src="/js/auth-login.js"></script>
+
+    <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-auth.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-analytics.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyCyIizgEUt3sOccsX6L0G_RWU1wEjJ-WOo",
+    authDomain: "xpense-app-d4794.firebaseapp.com",
+    databaseURL: "https://xpense-app-d4794.firebaseio.com",
+    projectId: "xpense-app-d4794",
+    storageBucket: "xpense-app-d4794.appspot.com",
+    messagingSenderId: "445191098969",
+    appId: "1:445191098969:web:3424e1fb5565e0bcf05748",
+    measurementId: "G-ZFP629VHR8"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+
+  //Make auth and firebase refrences ;
+  const auth = firebase.auth() ;
+
+  
+  //time stamp in snapshots
+
+
+</script>
+  <script src="/js/app.js"></script>
+
+</body>
+</html>
