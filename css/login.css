@@ -1,29 +1,32 @@
-body{
-    height: auto;
-    display:flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    color: white;
+body {
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+#main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: rgb(255, 255, 255);
+  padding: 2rem;
+  width: 500px;
+  border-radius: 5px;
+  height: 60%;
+}
+#main h3 {
+  color: grey;
+}
 
-}
-#main{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    background-color: rgb(255, 255, 255);
-    padding: 2rem;
-    width: 500px;
-    border-radius: 5px;
-    height: 60%;
-}
-#main h3{
-    color: grey;
+#testCredentials {
+  color: black !important;
 }
 
 @media only screen and (max-width: 768px) {
-    #main{
-        width:320px ;
-        height: 400px;
-    }
+  #main {
+    width: 320px;
+    height: 400px;
+  }
 }
